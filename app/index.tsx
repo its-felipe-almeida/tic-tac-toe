@@ -66,15 +66,15 @@ const Home = () => {
     setBoard(newBoard);
   };
 
-  const handleNewGame = (player: PlayerEnum) => {
+  const handleNewGame = useCallback((player: PlayerEnum) => {
     setStartingPlayer(player);
     startNewGame(player);
-  };
+  }, []);
 
   useFocusEffect(
     useCallback(() => {
       handleNewGame(PlayerEnum.NONE);
-    }, []),
+    }, [handleNewGame]),
   );
 
   useEffect(() => {

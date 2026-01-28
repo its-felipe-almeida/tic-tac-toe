@@ -201,8 +201,3 @@ color: colors.slate900
 - **Metro bundler issues**: stop the dev server and restart with `npm run start`.
 - **iOS won’t launch**: ensure Xcode and the simulator are installed/selected correctly.
 - **Android won’t launch**: ensure an emulator is running or a device is connected with USB debugging enabled.
-
-## License
-
-Unlicensed (add a license if you plan to distribute this project).
-
